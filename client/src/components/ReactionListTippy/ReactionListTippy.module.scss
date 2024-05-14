@@ -1,0 +1,97 @@
+.wrapper {
+}
+
+.wrapper {
+  animation: fade-in 0.2s ease-in;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  padding: 4px 12px 4px;
+  background-color: #3c4145;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(247, 177, 37);
+  margin-bottom: 4px;
+  padding-bottom: 2px;
+  width: 100%;
+}
+
+.like-header {
+  color: rgb(8, 102, 255) !important;
+  border-bottom: 1px solid rgb(8, 102, 255);
+}
+
+.love-header {
+  color: rgb(243, 62, 88) !important;
+  border-bottom: 1px solid rgb(243, 62, 88);
+}
+
+.haha-header {
+  color: rgb(247, 177, 37) !important;
+  border-bottom: 1px solid rgb(247, 177, 37);
+}
+
+.surprise-header {
+  color: rgb(247, 177, 37) !important;
+  border-bottom: 1px solid rgb(247, 177, 37);
+}
+
+.wow-header {
+  color: rgb(247, 177, 37) !important;
+  border-bottom: 1px solid rgb(247, 177, 37);
+}
+
+.sad-header {
+  color: rgb(247, 177, 37) !important;
+  border-bottom: 1px solid rgb(247, 177, 37);
+}
+
+.angry-header {
+  color: rgb(233, 113, 15) !important;
+  border-bottom: 1px solid rgb(233, 113, 15);
+}
+
+.user-name-item {
+  color: #e8f1fa;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.loader {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #e8f1fa;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,41 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: calc(100vh - 80px);
+  margin-top: calc(0.1 * 100vh);
+  margin-top: 80px;
+}
+
+.side-bar-left {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  border-bottom: 1px solid #e5e9f2;
+}
+
+.notification-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.notification-tab {
+  width: 400px;
+  height: 100%;
+  position: absolute;
+  background-color: #fafbfd;
+  border: 1px solid #e5e9f2;
+  right: 0;
+}

@@ -1,0 +1,120 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 24px;
+  border-bottom: 1px solid #e5e9f2;
+}
+
+.img-container {
+  position: relative;
+  margin: 0 72px 24px 72px;
+}
+
+.online-icon {
+  position: absolute;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  bottom: 10px;
+  right: 6px;
+  border: 3px solid #fff;
+  background-color: rgb(68, 166, 117);
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .room-name {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  .room-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #adb5bd;
+    margin-bottom: 16px;
+    span {
+      margin-left: 4px;
+    }
+  }
+}
+
+.quick-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-user {
+  color: #495057;
+  border: 1px solid #e5e9f2;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  &:hover {
+    border: 1px solid #e5e9f2;
+    transform: scale(1.1);
+    background-color: #edf1f7;
+  }
+}
+
+.edit-icon {
+  color: #495057;
+  border: 1px solid #e5e9f2;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  &:hover {
+    border: 1px solid #e5e9f2;
+    transform: scale(1.1);
+    background-color: #edf1f7;
+  }
+}
+
+.favorite {
+  background-color: #1e74fd;
+  color: #f8f9fa;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.1);
+    background-color: #05f;
+  }
+}
+
+.block {
+  background-color: #ff337c;
+
+  color: #f8f9fa;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.1);
+    background-color: #ff0d63;
+  }
+}
+
+.mute-icon {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  border: 1px solid #e5e9f2;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.1);
+    background: #f8f9fa;
+  }
+}
+
+.option-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin: 0 6px;
+  cursor: pointer;
+}

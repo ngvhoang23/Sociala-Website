@@ -1,0 +1,88 @@
+.wrapper {
+  padding: 0 12px;
+}
+
+.container {
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid #e5e9f2;
+  margin-bottom: 24px;
+}
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  margin-bottom: 24px;
+}
+
+.user-name {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.options > * {
+  margin: 0 10px;
+}
+
+.group-info {
+  list-style: none;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border: 1px solid #e5e9f2;
+}
+
+.group-header {
+  font-size: 1.2rem;
+  color: #adb5bd;
+}
+
+.group-content {
+  font-size: 1.4rem;
+}
+
+.info-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #adb5bd;
+}
+
+// WEB_KIT
+
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.wrapper::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
