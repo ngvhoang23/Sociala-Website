@@ -1,0 +1,129 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  // background-color: #f0f2f5;
+  position: absolute;
+  z-index: 999;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  color: var(--text-color);
+  padding: 12px 26px;
+  border-bottom: 1px solid #e5e9f2;
+  margin-bottom: 10px;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  .media-icon {
+    margin-right: 8px;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+.body {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.close-btn {
+  color: var(--text-color);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    color: #333;
+    box-shadow:
+      rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
+}
+
+.body-container {
+  img {
+    max-height: 600px;
+    max-width: 900px;
+    border-radius: 4px;
+  }
+  video {
+    max-height: 600px;
+    max-width: 900px;
+    border-radius: 4px;
+  }
+}
+
+.media-item {
+  opacity: 0.7;
+  cursor: pointer;
+  margin: 12px;
+}
+
+.check {
+  opacity: 1;
+  border: 3px solid #1e74fd;
+  border-radius: 10px;
+}
+
+.media-container {
+  height: 100%;
+  width: 30%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  box-shadow:
+    rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.media-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-height: 650px;
+  overflow-y: auto;
+}
+
+// WEBKIT
+
+.media-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.media-list::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.media-list::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}

@@ -1,0 +1,85 @@
+.wrapper {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #e5e9f2;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #e5e9f2;
+}
+
+.header-title {
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.search-friends-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #f1f1f1;
+  padding: 6px;
+  border-radius: 10px;
+  margin-right: 22px;
+  height: 36px;
+}
+
+.search-input {
+  border: none;
+  background-color: transparent;
+  padding: 8px;
+  outline: none;
+  font-size: 1.4rem;
+}
+
+.friend-requests-btn {
+  margin-right: 22px;
+  font-size: 1.5rem;
+  height: 36px;
+  font-weight: 500;
+  color: #1e74fd;
+  padding: 8px 12px;
+  border-radius: 10px;
+  &:hover {
+    background-color: #e4e4e4;
+  }
+}
+
+.find-friends-btn {
+  margin-right: 22px;
+  font-size: 1.5rem;
+  height: 36px;
+  font-weight: 500;
+  color: #1e74fd;
+  padding: 8px 12px;
+  border-radius: 10px;
+  &:hover {
+    background-color: #e4e4e4;
+  }
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.friend-item {
+  width: 44%;
+  margin: 21px;
+  margin-top: 0;
+  padding: 8px;
+  border: 1px solid #e5e9f2;
+  border-radius: 10px;
+}

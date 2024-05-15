@@ -1,0 +1,59 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 16px 24px;
+}
+
+.account-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+}
+
+.account-avatar {
+  height: 45px;
+  width: 45px;
+  margin-right: 16px;
+}
+
+.account-name {
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #212529;
+}
+
+.mutual-friends {
+  color: #adb5bd;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.operations {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  & > button {
+    width: 100px;
+    height: 36px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    border-radius: 1000px;
+  }
+}
+
+.confirm-btn {
+  background: linear-gradient(135deg, #05f, #09f);
+  color: #fff;
+  margin-right: 8px;
+}
+
+.reject-btn {
+  background-color: #eee;
+  color: #343a40;
+}

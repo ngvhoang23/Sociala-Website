@@ -1,0 +1,197 @@
+.wrapper {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+
+  .adjust-content-length-btn {
+    margin-left: 8px;
+    color: #1e74fd;
+    font-weight: 600;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.author-avatar {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+.comment-info {
+  border-radius: 16px;
+  padding: 8px 12px;
+  background-color: #edf2f6;
+  .author-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .content {
+    font-size: 1.4rem;
+    color: #343a40;
+    font-weight: 400;
+  }
+}
+
+.interactions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding-left: 50px;
+  margin-top: 6px;
+
+  .delete-btn {
+    font-size: 1.3rem;
+    color: #65676b;
+    font-weight: 500;
+    margin-right: 16px;
+    &:hover {
+      font-weight: 600;
+    }
+  }
+
+  .time-stamp {
+    font-size: 1.2rem;
+    color: #adb5bd;
+    font-weight: 500;
+  }
+}
+
+.typer-area {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e5e9f2;
+  padding: 4px 8px;
+  border-radius: 16px;
+
+  .comment-inp {
+    width: 100%;
+    padding: 4px;
+    resize: none;
+    border: none;
+    outline: none;
+    color: #495057;
+    font-weight: 500;
+  }
+
+  .options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .option-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: #adb5bd;
+    margin-right: 8px;
+    padding: 4px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    &:hover {
+      background-color: #edf2f6;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.content-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.attacked-files-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.file-inp {
+  display: none;
+}
+
+.options {
+  margin-left: 50px;
+}
+
+.cancel-edit-btn {
+  font-size: 1.3rem;
+  color: #65676b;
+  font-weight: 500;
+  margin-right: 16px;
+  &:hover {
+    font-weight: 600;
+  }
+}
+
+.submit-edit-btn {
+  font-size: 1.3rem;
+  color: #65676b;
+  font-weight: 500;
+  margin-right: 16px;
+  &:hover {
+    font-weight: 600;
+  }
+}
+
+.media-editing-area {
+  border-radius: 16px;
+  padding: 8px 12px;
+  background-color: #edf2f6;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  &:hover {
+    background-color: #e5eff6;
+  }
+}
+
+.media-uploading-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.photo-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.file-inp {
+  display: none;
+}
+
+.preview-media {
+  img {
+    max-height: 144px;
+  }
+  video {
+    max-height: 144px;
+  }
+}

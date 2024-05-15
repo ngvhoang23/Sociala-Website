@@ -1,0 +1,36 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  padding: 10px 8px;
+  font-weight: 500;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+}
+
+.title {
+  margin-left: 8px;
+  font-size: 1.5rem;
+}
+
+.medium {
+  .icon {
+    width: 30px;
+  }
+}
+
+.small {
+  .title {
+    font-size: 1.3rem;
+  }
+  .icon {
+    width: 20px;
+  }
+}

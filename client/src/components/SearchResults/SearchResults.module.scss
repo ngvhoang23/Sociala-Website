@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  > * {
+    margin: 8px 0;
+  }
+}
+
+.search-result-label {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-left: 8px;
+  margin-top: 10px;
+  display: block;
+}
+
+.message-option {
+  color: #f8f9fa;
+  background-color: #665dfe;
+  border-color: #665dfe;
+  &:hover {
+    background-color: #4237fe;
+    border-color: #362afe;
+  }
+}
+
+.see-profile-option {
+  margin-left: 8px;
+}

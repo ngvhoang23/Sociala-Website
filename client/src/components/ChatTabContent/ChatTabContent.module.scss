@@ -1,0 +1,173 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 30%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  padding: 12px;
+  border-bottom: 0.8px solid rgb(229, 233, 242);
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  .header-text {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #495057;
+  }
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notify-icon {
+  padding: 8px 6px;
+  margin-right: 8px;
+  color: #adb5bd;
+}
+
+.more-icon {
+  padding: 8px 6px;
+  color: #adb5bd;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 4px 0;
+}
+
+.drop-down-container {
+  position: relative;
+  width: 115px;
+  height: 37px;
+}
+
+.drop-down-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  border: 1px solid #e5e9f2;
+  background: transparent;
+  padding: 6px 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.drop-down-menu {
+  padding: 6px 0;
+  position: absolute;
+  background-color: #fff;
+  z-index: 10;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  right: -44px;
+  top: 38px;
+}
+
+.drop-down-item {
+  list-style-type: none;
+  font-size: 1.4rem;
+  width: 158px;
+  height: 37px;
+  padding: 8px 22px;
+  color: rgba(73, 80, 87, 0.8);
+  cursor: pointer;
+  &:hover {
+    color: #3d4349;
+    text-decoration: none;
+    background-color: #f8f9fa;
+  }
+}
+
+.search-container {
+  font-size: 16px;
+  width: 247px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ced4da;
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.search-input {
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  padding: 6px 0 6px 12px;
+  border: transparent;
+  outline: none;
+  cursor: text;
+  flex: 1;
+  height: 35px;
+}
+
+.nav-contact-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px 0;
+  button {
+    display: block;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px 16px;
+    width: 100px;
+    border-radius: 9999px;
+    margin-right: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    &:hover {
+      background-color: aqua;
+    }
+  }
+}
+
+.contacts-container {
+  overflow-y: auto;
+  width: 100%;
+}
+
+.active {
+  background-color: #ccc;
+}
+
+// ======================= WEB_KIT ===========================
+
+.contacts-container::-webkit-scrollbar {
+  display: none;
+}
+
+.contacts-container::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.contacts-container::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}

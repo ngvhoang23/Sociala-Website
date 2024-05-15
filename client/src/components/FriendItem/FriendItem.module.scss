@@ -1,0 +1,92 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.friend-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.98;
+  }
+}
+
+.user-title {
+  margin-left: 12px;
+}
+
+.user-name {
+  font-size: 1.6rem;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.mutual-friend-quantity {
+  font-size: 1.3rem;
+  color: #adb5bd;
+  cursor: pointer;
+  user-select: none;
+}
+
+.tools {
+  position: relative;
+}
+
+.options-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  color: var(--text-color);
+  margin-right: 8px;
+  border: 1px solid #e5e9f2;
+  &:hover {
+    box-shadow:
+      rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  }
+}
+.options-btn-active {
+  box-shadow:
+    rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.menu-options {
+  position: absolute;
+  bottom: 44px;
+  right: 0;
+}
+
+.friend-option {
+  margin-bottom: 4px;
+  min-width: 220px;
+  max-width: 360px;
+  &:last-child {
+    margin: 0;
+  }
+
+  &:hover {
+    background-color: #e4e6e9;
+  }
+
+  min-width: 200px;
+  max-width: 260px;
+  padding: 8px;
+}

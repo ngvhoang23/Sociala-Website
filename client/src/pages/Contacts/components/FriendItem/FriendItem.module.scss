@@ -1,0 +1,165 @@
+.wrapper {
+  padding: 12px;
+  padding-bottom: 2px;
+  border-radius: 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.wrapper {
+  animation: fade-in 0.3s ease-in;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.friend-avatar {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+
+  img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+  }
+}
+
+.body {
+  margin-top: 4px;
+}
+
+.friend-name {
+  margin-left: 4px;
+  font-size: 1.7rem;
+  font-weight: 600;
+  transition: all ease 0.3s;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.mutual-friends {
+  margin-left: 4px;
+  font-size: 1.3rem;
+  color: #adb5bd;
+  margin-bottom: 8px;
+  min-height: 19.5px;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.confirm-btn {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #ccc;
+  margin-bottom: 8px;
+  color: #fff;
+  font-weight: 500;
+  background-color: #1e74fd;
+  border-radius: 6px;
+  transition: all ease 0.3s;
+
+  &:hover {
+    background-color: #05f;
+  }
+}
+
+.cancel-btn {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #ccc;
+  color: var(--text-color);
+  font-weight: 500;
+  background-color: #f0f2f5;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  transition: all ease 0.3s;
+  &:hover {
+    background-color: #e4e6eb;
+  }
+}
+
+.cancel-req-btn {
+  width: 100%;
+  padding: 10px 0;
+  font-weight: 500;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  color: #fff;
+  background-color: #f3405e;
+  transition: all ease 0.3s;
+  &:hover {
+    background-color: #f02849;
+  }
+}
+
+.add-friend-btn {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #ccc;
+  color: #fff;
+  font-weight: 500;
+  background-color: #1e74fd;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  transition: all ease 0.3s;
+
+  &:hover {
+    background-color: #05f;
+  }
+}
+
+.see-profile-btn {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #ccc;
+  color: var(--text-color);
+  font-weight: 500;
+  background-color: #f0f2f5;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  transition: all ease 0.3s;
+
+  &:hover {
+    background-color: #e4e6eb;
+  }
+}
+
+.message-btn {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #ccc;
+  color: #fff;
+  font-weight: 500;
+  background-color: #1e74fd;
+  border-radius: 6px;
+  transition: all ease 0.3s;
+  margin-bottom: 8px;
+
+  &:hover {
+    background-color: #05f;
+  }
+}
+
+.cancel-btn {
+}
+
+.small {
+  .friend-name {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+}

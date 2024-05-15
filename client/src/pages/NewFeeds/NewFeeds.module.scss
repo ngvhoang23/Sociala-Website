@@ -1,0 +1,85 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  // overflow: hidden;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #f0f2f5;
+}
+
+.nav-content {
+  width: 24%;
+  position: fixed;
+}
+
+.new-feeds-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 60px 0 60px;
+}
+
+.story-content {
+  margin-bottom: 20px;
+}
+
+.contacts-content {
+  height: 94vh;
+  width: 26%;
+  position: fixed;
+  right: 0;
+}
+
+.friend-requests {
+  margin-bottom: 18px;
+}
+
+.new-feeds-content::-webkit-scrollbar {
+  // display: none;
+  width: 30px;
+}
+
+.new-feeds-content::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.new-feeds-content::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.wrapper::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.mini-chat-box-list {
+  position: fixed;
+  bottom: 10px;
+  right: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30%;
+}
+
+.mini-chat-box-wrapper {
+  margin-left: 12px;
+}

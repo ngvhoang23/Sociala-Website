@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+.container {
+  width: 100%;
+}
+
+.song-item {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 8px;
+  cursor: pointer;
+  &:hover {
+    background-color: #e4e6e9;
+  }
+}
+
+.footer {
+  width: 100%;
+}
+
+.close-btn {
+  width: 100%;
+  border: 1px solid #ccc;
+  font-weight: 500;
+  padding: 10px 12px;
+  border-radius: 10px;
+  &:hover {
+    background-color: #e41e3f;
+    color: #fff;
+  }
+}

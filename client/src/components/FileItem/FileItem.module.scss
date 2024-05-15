@@ -1,0 +1,99 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #ced0d4;
+  border-radius: 10px;
+  padding: 8px;
+  position: relative;
+}
+
+.doc-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.excel-icon {
+  color: green;
+}
+
+.doc-info {
+  margin-left: 10px;
+}
+
+.doc-name {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  font-weight: 500;
+  max-width: 310px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.doc-size {
+  font-size: 1.2rem;
+  color: #adb5bd;
+}
+
+.remove-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ced0d4;
+  background-color: #fff;
+  z-index: 10;
+  &:hover {
+    background-color: #f02849;
+    color: #fff;
+  }
+}
+
+.small {
+  .doc-name {
+    font-size: 1.3rem !important;
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .doc-size {
+    font-size: 1.2rem !important;
+  }
+
+  .office-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  padding: 6px 8px;
+}
+
+.mini {
+  width: 140px;
+
+  .doc-name {
+    font-size: 1.3rem !important;
+    max-width: 60px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .doc-size {
+    font-size: 1.2rem !important;
+  }
+
+  .office-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  padding: 6px 8px;
+}

@@ -1,0 +1,113 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  padding: 20px 20px;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  border: 1px solid #dcdde1;
+  background-color: #fff;
+}
+
+.active {
+  background-color: #1e74fd;
+  .account-name {
+    color: #fff;
+  }
+
+  .lasted-message {
+    color: #f1f1f1 !important;
+  }
+
+  .time-stamp-message {
+    color: #f1f1f1;
+  }
+  .online-icon {
+    background-color: #1e74fd;
+  }
+}
+
+.isSeen {
+  .lasted-message {
+    color: rgb(73, 80, 87);
+    font-weight: 500;
+  }
+}
+
+.un-read-state {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: #1e74fd;
+  margin-left: 12px;
+}
+
+.account-avatar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.account-avatar {
+  margin-right: 8px;
+}
+
+.online-icon {
+  position: absolute;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  top: 0px;
+  right: 6px;
+  border: 3px solid #fff;
+  background-color: rgb(68, 166, 117);
+}
+
+.contact-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 14px;
+  div {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.account-name,
+.lasted-message {
+  text-decoration: none;
+}
+
+.account-name {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 6px;
+  color: rgb(73, 80, 87);
+  font-weight: 500;
+}
+
+.time-stamp-message {
+  font-size: 1.3rem;
+  color: #adb5bd;
+}
+
+.lasted-message {
+  width: 240px;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #adb5bd;
+  font-weight: 400;
+}
