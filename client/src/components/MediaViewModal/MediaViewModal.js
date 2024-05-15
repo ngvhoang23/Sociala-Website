@@ -25,11 +25,6 @@ function MediaViewModal({ setMediaView, mediaView, media, className }) {
         <div className={cx('body')}>
           <div className={cx('body-container')} onClick={(e) => e.stopPropagation()}>
             {currentMedia.type === 'video' ? (
-              // <video className={cx('video-content')} controls>
-              //   <source src={currentMedia.url} type="video/mp4" />
-              //   Something wents wrong!
-              // </video>
-
               <MediaItem3
                 item={{ url: currentMedia.url, type: 'video' }}
                 max_height={700}
@@ -42,7 +37,6 @@ function MediaViewModal({ setMediaView, mediaView, media, className }) {
                 className={cx('media-item')}
               />
             ) : (
-              // <img className={cx('image-content')} src={currentMedia.url} alt="img" />
               <MediaItem3
                 item={{ url: currentMedia.url, type: 'image' }}
                 max_height={700}
@@ -68,6 +62,7 @@ function MediaViewModal({ setMediaView, mediaView, media, className }) {
               if (item.type === 'image') {
                 return (
                   <MediaItem2
+                    key={item.media_id}
                     item={{ url: item.url, type: 'image' }}
                     width={120}
                     height={120}
@@ -84,6 +79,7 @@ function MediaViewModal({ setMediaView, mediaView, media, className }) {
               } else if (item.type === 'video') {
                 return (
                   <MediaItem2
+                    key={item.media_id}
                     item={{ url: item.url, type: 'video' }}
                     width={120}
                     height={120}

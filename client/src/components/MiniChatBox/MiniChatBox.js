@@ -1,7 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './MiniChatBox.module.scss';
 import { CloseIcon, EditIcon, LogOutIcon, MessageDot, UserGroupIcon, UserIcon, UserPlus } from '../Icons';
-import { useContext, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { UserInfoContext } from '~/AuthComponent/ProtectedRoutes';
 import MessageTag from '../MessageTag';
 import Cookies from 'universal-cookie';
@@ -147,12 +147,12 @@ function MiniChatBox({
     if (isAtBottom || newMessage?.author_id == user.user_id) {
       lastMessageRef?.current?.scrollIntoView({ behavior: 'smooth' });
     }
-  }, [newMessage, chatBoxes]);
+  }, [newMessage?.message_id, chatBoxes]);
 
   useEffect(() => {
     setTimeout(() => {
       lastMessageRef?.current?.scrollIntoView({ behavior: 'smooth' });
-    }, 10);
+    }, 100);
   }, []);
 
   // socket listener
@@ -781,6 +781,7 @@ function MiniChatBox({
               return JSON.parse(JSON.stringify(chatBox));
             });
           });
+          setNewMessage();
           if (!result.data.content.length) {
             setIsNoMoreMessage(true);
           }

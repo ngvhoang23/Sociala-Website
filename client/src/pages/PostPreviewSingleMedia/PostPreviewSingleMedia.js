@@ -820,39 +820,41 @@ function PostPreviewSinglePhoto({ post_id, media_id, onClose }) {
                   </p>
                 </div>
               </div>
-              <div className={cx('operations')} ref={optionsRef}>
-                <button className={cx('options-btn')} onClick={() => setIsOpenOptions((prev) => !prev)}>
-                  <ThreeDotIcon className={cx('operation-icon')} width={'2.2rem'} height={'2.2rem'} />
-                </button>
-                {isOpenOptions && (
-                  <TippyWrapper className={cx('menu-options')} onClick={() => setIsOpenOptions(false)}>
-                    {user.user_id == postInfo?.author_id && (
-                      <IconBtn
+              {user.user_id == postInfo?.author_id && (
+                <div className={cx('operations')} ref={optionsRef}>
+                  <button className={cx('options-btn')} onClick={() => setIsOpenOptions((prev) => !prev)}>
+                    <ThreeDotIcon className={cx('operation-icon')} width={'2.2rem'} height={'2.2rem'} />
+                  </button>
+                  {isOpenOptions && (
+                    <TippyWrapper className={cx('menu-options')} onClick={() => setIsOpenOptions(false)}>
+                      {user.user_id == postInfo?.author_id && (
+                        <IconBtn
+                          className={cx('post-option')}
+                          icon={<EditIcon width="2.1rem" height="2.1rem" />}
+                          title="Edit Post"
+                          medium
+                          onClick={handleOpenPostEditor}
+                        />
+                      )}
+                      {user.user_id == postInfo?.author_id && (
+                        <IconBtn
+                          className={cx('post-option', 'delete-post-option')}
+                          icon={<XMarkIcon width="2.1rem" height="2.1rem" />}
+                          title="Delete Post"
+                          medium
+                          onClick={handleDeletePost}
+                        />
+                      )}
+                      {/* <IconBtn
                         className={cx('post-option')}
-                        icon={<EditIcon width="2.1rem" height="2.1rem" />}
-                        title="Edit Post"
+                        icon={<SaveIcon width="2.1rem" height="2.1rem" />}
+                        title="Save Post"
                         medium
-                        onClick={handleOpenPostEditor}
-                      />
-                    )}
-                    {user.user_id == postInfo?.author_id && (
-                      <IconBtn
-                        className={cx('post-option', 'delete-post-option')}
-                        icon={<XMarkIcon width="2.1rem" height="2.1rem" />}
-                        title="Delete Post"
-                        medium
-                        onClick={handleDeletePost}
-                      />
-                    )}
-                    <IconBtn
-                      className={cx('post-option')}
-                      icon={<SaveIcon width="2.1rem" height="2.1rem" />}
-                      title="Save Post"
-                      medium
-                    />
-                  </TippyWrapper>
-                )}
-              </div>
+                      /> */}
+                    </TippyWrapper>
+                  )}
+                </div>
+              )}
             </div>
             <div className={cx('body')}>
               <div className={cx('post-content')}>

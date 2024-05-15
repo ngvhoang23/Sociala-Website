@@ -114,12 +114,11 @@ function MessageTag({
       case 'text':
         return <p className={cx('text-content')}>{message}</p>;
       case 'image':
-        // return <MediaItem className={cx('media-item')} type="image" src={message} large removable={false} />;
         return (
           <MediaItem3
             item={{ url: message, type: 'image' }}
-            max_height={260}
-            max_width={260}
+            max_height={small ? 160 : 260}
+            max_width={small ? 160 : 260}
             border_radius={10}
             _styles={{
               boxShadow: 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px',
@@ -128,12 +127,11 @@ function MessageTag({
           />
         );
       case 'video':
-        // return <MediaItem className={cx('media-item')} type="video" src={message} large removable={false} />;
         return (
           <MediaItem3
             item={{ url: message, type: 'video' }}
-            max_height={260}
-            max_width={260}
+            max_height={small ? 160 : 260}
+            max_width={small ? 160 : 260}
             border_radius={10}
             _styles={{
               boxShadow: 'rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px',

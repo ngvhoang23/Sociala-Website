@@ -116,7 +116,6 @@ function MiniChatBoxTyper({ room_type, room_id, members, handleSendMessage, hand
   };
 
   useOutsideAlerter(emojiRef, () => {
-    console.log('object');
     setIsOpenEmojiPicker(false);
   });
 

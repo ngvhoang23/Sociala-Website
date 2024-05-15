@@ -128,7 +128,7 @@ function ChatListContainer({ setIsOpen }) {
       },
     };
 
-    axios
+    axiosInstance
       .post(`/rooms/delete/${room_id}`, payload, configurations)
       .then((result) => {
         setIsStrange((prev) => !prev);

@@ -56,9 +56,6 @@ function MediaItem3({
       _d.height = height;
     }
 
-    if (item.type == 'image') {
-      console.log(i, _d);
-    }
     return _d;
   };
 
