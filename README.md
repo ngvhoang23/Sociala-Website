@@ -1,154 +1,97 @@
 # Introduction
-- Add your project logo.
-- Write a short introduction to the project.
-- If you are using badges, add them here.
+<div style="display: flex, align-item: center, justify-content: 'center', background-color: red" >
+<image src="https://github.com/ngvhoang23/Sociala-Website/assets/110328041/12751312-0be5-4404-a4f3-ded99a7974ad" />
+<p style="font-size:180px;">A social networking site that makes it easy for you to connect and share with family and friends online</p>
 
 ## :ledger: Index
 
 - [About](#beginner-about)
-- [Usage](#zap-usage)
-  - [Installation](#electric_plug-installation)
-  - [Commands](#package-commands)
-- [Development](#wrench-development)
-  - [Pre-Requisites](#notebook-pre-requisites)
-  - [Developmen Environment](#nut_and_bolt-development-environment)
-  - [File Structure](#file_folder-file-structure)
-  - [Build](#hammer-build)  
-  - [Deployment](#rocket-deployment)  
-- [Community](#cherry_blossom-community)
-  - [Contribution](#fire-contribution)
-  - [Branches](#cactus-branches)
-  - [Guideline](#exclamation-guideline)  
-- [FAQ](#question-faq)
-- [Resources](#page_facing_up-resources)
-- [Gallery](#camera-gallery)
-- [Credit/Acknowledgment](#star2-creditacknowledgment)
+- [File Structure](#file_folder-file-structure)
+- [Site](#globe_with_meridians-site)
+- [Technology](#-technology-to-build-application)
 - [License](#lock-license)
 
 ##  :beginner: About
-Add a detailed introduction about the project here, everything you want the reader to know.
+#### Sociala is your all-in-one platform for seamless communication and community building. 
+<h3>Key Features:</h3>
+<h5>Real-Time Messaging </h5>
+<h6>Enjoy fast and reliable messaging with real-time updates, ensuring your conversations are always current and engaging.</h6>
 
-## :zap: Usage
-Write about how to use this project.
+<h5>Dynamic Posting:</h5> <h6>Share your thoughts, photos, videos, and links with your network. Like, comment, and engage with posts to stay connected and informed </p6>
 
-###  :electric_plug: Installation
-- Steps on how to install this project, to use it.
-- Be very detailed here, For example, if you have tools which run on different operating systems, write installation steps for all of them.
+<h5>Group Chatting:</h5> <h6>Create and manage group chats effortlessly. Perfect for team projects, social clubs, or any group activity, our group chat feature supports robust discussions and easy collaboration.</h6>
 
-```
-$ add installations steps if you have to.
-```
+<h5>User Profiles:</h6> <h6>Customize your profile to reflect your personality. Add photos, update your bio, and let your connections know more about you.</h6>
 
-###  :package: Commands
-- Commands to start the project.
+<h5>Notifications:</h5> <h6>Stay informed with real-time notifications for new messages, group updates, and interactions on your posts.</h6>
 
-##  :wrench: Development
-If you want other people to contribute to this project, this is the section, make sure you always add this.
+<h5>Media Sharing:</h5> <h6>Easily share images, videos, and other files within your chats and posts, enhancing your conversations with multimedia content.</h6>
 
-### :notebook: Pre-Requisites
-List all the pre-requisites the system needs to develop this project.
-- A tool
-- B tool
+<h5>Privacy and Security:</h5> <h6>Your privacy is our priority. ConnectHub uses advanced encryption and secure protocols to protect your data and ensure your conversations remain private.</h6>
 
-###  :nut_and_bolt: Development Environment
-Write about setting up the working environment for your project.
-- How to download the project...
-- How to install dependencies...
+<h5>Accessibility:</h5> <h6>Our platform is designed to be accessible to all users, with features that ensure an inclusive experience for everyone.</h6>
+
+##  :globe_with_meridians: Site
+
+## 🚀 Technology to Build Application
+
+Here are the main technologies used to build this application:
+
+- **Programming Languages:**
+  - ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) **JavaScript** - The language of the web, used for frontend and backend development.
+
+- **Frameworks and Libraries:**
+  - ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) **React** - A JavaScript library for building user interfaces.
+  - ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white) **Node.js** - A JavaScript runtime built on Chrome's V8 JavaScript engine.
+  - ![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white) **Express.js** - Fast, unopinionated, minimalist web framework for Node.js.
+  - ![Socket.IO](https://img.shields.io/badge/Socket.IO-010101?style=for-the-badge&logo=socket.io&logoColor=white) **Socket.IO** - Real-time bidirectional event-based communication library for web applications.
+
+- **Database:**
+  - ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white) **MySQL** - An open-source relational database management system.
+
+- **Version Control:**
+  - ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) **Git** - A distributed version-control system for tracking changes in source code.
+
+### Additional Tools:
+- **IDE:** ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white) **Visual Studio Code** - A free source-code editor made by Microsoft for Windows, Linux, and macOS.
 
 
-###  :file_folder: File Structure
+##  :file_folder: File Structure
 Add a file structure here with the basic details about files, below is an example.
 
 ```
 .
-├── assets
-│   ├── css
-│   │   ├── index-ui.css
-│   │   └── rate-ui.css
-│   ├── images
-│   │   ├── icons
-│   │   │   ├── shrink-button.png
-│   │   │   └── umbrella.png
-│   │   ├── logo_144.png
-│   │   └── Untitled-1.psd
-│   └── javascript
-│       ├── index.js
-│       └── rate.js
-├── CNAME
-├── index.html
-├── rate.html
-└── README.md
+├── src
+│   ├── assets
+│   │   
+│   ├── AuthComponent
+│   │   └── ProtectedRoutes.js
+│   ├── components
+│   ├── hooks   
+│   ├── MainLayout
+│   ├── pages
+│   ├── App.js
+│
+├── src
+│   ├── assets
+│   │   
+│   ├── AuthComponent
+│   │   └── ProtectedRoutes.js
+│   ├── components
+│   ├── hooks   
+│   ├── MainLayout
+│   ├── pages
+│   ├── App.js
 ```
 
 | No | File Name | Details 
 |----|------------|-------|
 | 1  | index | Entry point
 
-###  :hammer: Build
-Write the build Instruction here.
-
-### :rocket: Deployment
-Write the deployment instruction here.
-
-## :cherry_blossom: Community
-
-If it's open-source, talk about the community here, ask social media links and other links.
-
- ###  :fire: Contribution
-
- Your contributions are always welcome and appreciated. Following are the things you can do to contribute to this project.
-
- 1. **Report a bug** <br>
- If you think you have encountered a bug, and I should know about it, feel free to report it [here]() and I will take care of it.
-
- 2. **Request a feature** <br>
- You can also request for a feature [here](), and if it will viable, it will be picked for development.  
-
- 3. **Create a pull request** <br>
- It can't get better then this, your pull request will be appreciated by the community. You can get started by picking up any open issues from [here]() and make a pull request.
-
- > If you are new to open-source, make sure to check read more about it [here](https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-source) and learn more about creating a pull request [here](https://www.digitalocean.com/community/tutorials/how-to-create-a-pull-request-on-github).
-
-
- ### :cactus: Branches
-
- I use an agile continuous integration methodology, so the version is frequently updated and development is really fast.
-
-1. **`stage`** is the development branch.
-
-2. **`master`** is the production branch.
-
-3. No other permanent branches should be created in the main repository, you can create feature branches but they should get merged with the master.
-
-**Steps to work with feature branch**
-
-1. To start working on a new feature, create a new branch prefixed with `feat` and followed by feature name. (ie. `feat-FEATURE-NAME`)
-2. Once you are done with your changes, you can raise PR.
-
-**Steps to create a pull request**
-
-1. Make a PR to `stage` branch.
-2. Comply with the best practices and guidelines e.g. where the PR concerns visual elements it should have an image showing the effect.
-3. It must pass all continuous integration checks and get positive reviews.
-
-After this, changes will be merged.
-
-
-### :exclamation: Guideline
-coding guidelines or other things you want people to follow should follow.
-
-
-## :question: FAQ
-You can optionally add a FAQ section about the project.
-
-##  :page_facing_up: Resources
-Add important resources here
 
 ##  :camera: Gallery
 Pictures of your project.
 
-## :star2: Credit/Acknowledgment
-Credit the authors here.
 
 ##  :lock: License
 Add a license here, or a link to it.
