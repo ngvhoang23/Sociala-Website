@@ -60,33 +60,78 @@ Here are the main technologies used to build this application:
 Add a file structure here with the basic details about files, below is an example.
 
 ```
-.
-├── src
-│   ├── assets
-│   │   
-│   ├── AuthComponent
-│   │   └── ProtectedRoutes.js
-│   ├── components
-│   ├── hooks   
-│   ├── MainLayout
-│   ├── pages
-│   ├── App.js
-│
-├── src
-│   ├── assets
-│   │   
-│   ├── AuthComponent
-│   │   └── ProtectedRoutes.js
-│   ├── components
-│   ├── hooks   
-│   ├── MainLayout
-│   ├── pages
-│   ├── App.js
+
+client
+   ├── src
+   |    ├── assets 
+   |    ├── AuthComponent
+   |    │    └── ProtectedRoutes.js
+   |    ├── components
+   |    │    ├── ContactItem
+   |    │    │     ├── ContactItem.js
+   |    │    │     ├── ContactItem.module.scss
+   |    │    └── ...
+   |    │         ├── ...
+   |    │         ├── ...
+   |    │         └── ...  
+   |    ├── MainLayout
+   |    │    ├── MainLayout.js
+   |    │    ├── MainLayout.module.scss
+   |    │    ├── components
+   |    |         ├── MainNavigation
+   |    |               ├── MainNavigation.js
+   |    |               └── MainNavigation.module.scss
+   |    |     
+   |    ├── pages
+   |    │    ├── Login
+   |    |    │    ├── Login.js
+   |    |    │    └── Login.module.scss
+   |    |    ├── ...
+   |    |         ├── ...
+   |    |         └── ...
+   |    ├── App.js
+   |    └── index.js
+   |       
+server
+   ├── src
+        ├── app
+        │   └── controllers
+        |         ├── AuthControllers.js
+        |         ├── UserController.js
+        |         └── ...
+        ├── auth
+        |    └── auth.js
+        ├── routes
+        |    ├── users.js
+        |    ├── posts.js
+        |    └── ...
+        ├── socketIO
+        |    └── socketIO.js
+        └── index.js
+
 ```
 
+### Client
 | No | File Name | Details 
 |----|------------|-------|
-| 1  | index | Entry point
+| 1  | /assets | This folder typically contains static assets such as images, fonts, and other media files.
+| 2  | /ProtectedRoutes.js | This file likely contains a component that manages protected routes, ensuring that only authenticated users can access certain parts of the application.
+| 3  | /MainLayout | This folder typically contains 
+| 4  | /MainLayout/MainLayout.js | The main layout component that wraps around other components, providing a consistent layout.
+| 5  | /MainLayoutMainLayout\components | This folder typically contains components for MainLayout
+| 6  | /pages | This folder typically contains pages for website
+| 7  | /App.js | The root component that sets up routing and other top-level components.
+| 8  | /index.js | The entry point for the React application, responsible for rendering the App component into the DOM.
+| 9  | *.module.scss | The SCSS module for styling component.
+
+### Server
+| No | File Name | Details 
+|----|------------|-------|
+| 1  | /app/controllers | Controllers handling requests and responses for various features of your social network application
+| 1  | /auth/auth.js | Responsible for checking token and authorization
+| 2  | /routes | Defines the API endpoints for application
+| 3  | /socketIO/socketIO.js | Sets up Socket.IO for real-time communication between the server and clients.
+| 4  | index.js | The main entry point for the server application, responsible for initializing the server
 
 
 ##  :camera: Gallery
