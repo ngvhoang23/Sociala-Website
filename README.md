@@ -135,12 +135,25 @@ server
 
 
 ##  :camera: Gallery
+### :arrow_right: Profile
 ![profile](https://github.com/ngvhoang23/Sociala-Website/assets/110328041/81055808-ffa3-4984-9fd7-c71a99195a2a)
+
+### :arrow_right: Messenger
 ![messenger](https://github.com/ngvhoang23/Sociala-Website/assets/110328041/83369573-29f9-4730-96c6-8f16c989df56)
+
+### :arrow_right: Sign In
 ![signin](https://github.com/ngvhoang23/Sociala-Website/assets/110328041/828df860-7754-4942-b321-0cc770e5e431)
+
+### :arrow_right: Sign Up
 ![sign-up](https://github.com/ngvhoang23/Sociala-Website/assets/110328041/cf8f076d-ed9a-4464-9cd7-f823a1bbce29)
+
+### :arrow_right: Story
 ![story-preview](https://github.com/ngvhoang23/Sociala-Website/assets/110328041/d2c2df73-01b1-49d1-bbd6-2a3e13cc4945)
+
+### :arrow_right: Post Detail
 ![post-single-detail](https://github.com/ngvhoang23/Sociala-Website/assets/110328041/1948797c-1c08-413c-a61b-0bcd2d9947fc)
+
+### :arrow_right: Post Detail
 ![post-detail](https://github.com/ngvhoang23/Sociala-Website/assets/110328041/258bfe35-01ca-41f1-a6c0-e1aaa78cdc14)
 
 
