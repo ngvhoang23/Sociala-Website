@@ -1,15 +1,12 @@
 # Introduction
-<div style="display: flex, align-item: center, justify-content: 'center', background-color: red" >
-<image src="https://github.com/ngvhoang23/Sociala-Website/assets/110328041/12751312-0be5-4404-a4f3-ded99a7974ad" />
-<p style="font-size:180px;">A social networking site that makes it easy for you to connect and share with family and friends online</p>
+![web_bg](https://github.com/ngvhoang23/Sociala-Website/assets/110328041/86eec070-8235-4907-9606-39975f433301)
 
 ## :ledger: Index
 
 - [About](#beginner-about)
 - [File Structure](#file_folder-file-structure)
-- [Site](#globe_with_meridians-site)
 - [Technology](#-technology-to-build-application)
-- [License](#lock-license)
+- [Gallery](#camera-gallery)
 
 ##  :beginner: About
 #### Sociala is your all-in-one platform for seamless communication and community building. 
@@ -31,7 +28,6 @@
 
 <h5>Accessibility:</h5> <h6>Our platform is designed to be accessible to all users, with features that ensure an inclusive experience for everyone.</h6>
 
-##  :globe_with_meridians: Site
 
 ## 🚀 Technology to Build Application
 
@@ -158,4 +154,3 @@ server
 
 
 ##  :lock: License
-Add a license here, or a link to it.
