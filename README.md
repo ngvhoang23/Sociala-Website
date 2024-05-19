@@ -53,10 +53,7 @@ Here are the main technologies used to build this application:
 
 
 ##  :file_folder: File Structure
-Add a file structure here with the basic details about files, below is an example.
-
 ```
-
 client
    ├── src
    |    ├── assets 
@@ -110,12 +107,12 @@ server
 ### Client
 | No | File Name | Details 
 |----|------------|-------|
-| 1  | /assets | This folder typically contains static assets such as images, fonts, and other media files.
-| 2  | /ProtectedRoutes.js | This file likely contains a component that manages protected routes, ensuring that only authenticated users can access certain parts of the application.
-| 3  | /MainLayout | This folder typically contains 
+| 1  | /assets | This folder contains static assets such as images, fonts, and other media files.
+| 2  | /ProtectedRoutes.js | This file contains a component that manages protected routes, ensuring that only authenticated users can access certain parts of the application.
+| 3  | /MainLayout | The main layout that wraps around other components, providing a consistent layout
 | 4  | /MainLayout/MainLayout.js | The main layout component that wraps around other components, providing a consistent layout.
-| 5  | /MainLayoutMainLayout\components | This folder typically contains components for MainLayout
-| 6  | /pages | This folder typically contains pages for website
+| 5  | /MainLayoutMainLayout\components | This folder contains components for MainLayout
+| 6  | /pages | This folder contains pages for website
 | 7  | /App.js | The root component that sets up routing and other top-level components.
 | 8  | /index.js | The entry point for the React application, responsible for rendering the App component into the DOM.
 | 9  | *.module.scss | The SCSS module for styling component.
