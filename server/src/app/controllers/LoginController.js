@@ -1,11 +1,11 @@
-const bcrypt = require("bcrypt");
-const jwt = require("jsonwebtoken");
-const db = require("../../config/db");
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
+const db = require('../../config/db');
 
 class LoginController {
   // [GET] /login
   index(req, res) {
-    res.send("Log In successfully");
+    res.send('Log In successfully');
   }
 
   // [POST] /login
@@ -13,10 +13,10 @@ class LoginController {
     db.query(`SELECT * FROM user_auth_info WHERE user_name = '${req.body.user_name}'`, (err, result) => {
       if (err || result.length == 0) {
         res.status(404).send({
-          message: "user_non_existent",
+          message: 'user_non_existent',
           err,
         });
-        console.log(err || "user_name not found");
+        console.log(err || 'user_name not found');
       } else {
         const user = result[0];
         bcrypt
@@ -27,7 +27,7 @@ class LoginController {
             // check if password matches
             if (!passwordCheck) {
               return res.status(400).send({
-                message: "password_was_wrong",
+                message: 'password_was_wrong',
                 // error,
               });
             }
@@ -53,14 +53,14 @@ class LoginController {
 
             //   return success res
             res.status(200).send({
-              message: "Login Successful",
+              message: 'Login Successful',
               access_token,
               refresh_token,
             });
           })
           .catch((error) => {
             response.status(400).send({
-              message: "password_was_wrong",
+              message: 'password_was_wrong',
               error,
             });
           });

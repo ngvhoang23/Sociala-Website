@@ -9,7 +9,7 @@ require("dotenv").config({ path: "./config.env" });
 const moment = require("moment");
 
 const corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "http://localhost:3001",
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
@@ -26,7 +26,7 @@ const socketInit = require("./socketIO/socketIO");
 const io = require("socket.io")(http, {
   maxHttpBufferSize: 1e10,
   cors: {
-    origin: "http://localhost:3000",
+    origin: "http://localhost:3001",
   },
 });
 
